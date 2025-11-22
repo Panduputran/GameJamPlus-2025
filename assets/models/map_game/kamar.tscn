@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3 uid="uid://ch1fp582tkpqx"]
+
+[ext_resource type="PackedScene" uid="uid://ckeubiowqdjb6" path="res://scenes/player/player.tscn" id="1_kp4le"]
+[ext_resource type="PackedScene" uid="uid://chuundg6wfqao" path="res://assets/models/object/meja.tscn" id="3_iqpru"]
+[ext_resource type="PackedScene" uid="uid://cstj7nbcl4jsn" path="res://assets/models/object/ember.tscn" id="3_nuycq"]
+[ext_resource type="PackedScene" uid="uid://btkm1dwhigpvc" path="res://assets/models/object/rumah.tscn" id="4_a4eo2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jh644"]
+albedo_color = Color(0.31802, 0.31802, 0.31802, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_478l2"]
+material = SubResource("StandardMaterial3D_jh644")
+size = Vector2(50, 50)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qfy16"]
+size = Vector3(50, 1, 50)
+
+[node name="kamar" type="Node3D"]
+
+[node name="Floor" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.543079, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+mesh = SubResource("PlaneMesh_478l2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_qfy16")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.0355814, -0.669027, 0.742386, -0.0320286, 0.743238, 0.66826, -0.998854, 0, -0.0478735, 38.0101, 31.702, 0)
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.0569624, 0.668873, -0.741191, -0.0320287, 0.743238, 0.66826, 0.997863, -0.0143263, 0.0637597, -54.6905, 31.702, 0)
+
+[node name="Player" parent="." instance=ExtResource("1_kp4le")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.18613, -0.0462915, 0.0329166)
+
+[node name="StaticBody3D" parent="." instance=ExtResource("3_nuycq")]
+transform = Transform3D(1.36399, 0, 0, 0, 1.36399, 0, 0, 0, 1.36399, -1.25137, 0.282503, 0)
+
+[node name="meja" parent="." instance=ExtResource("3_iqpru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00650787, 4.29153e-05, -0.00533462)
+
+[node name="rumah" parent="." instance=ExtResource("4_a4eo2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.78633, 0.110905, 0)

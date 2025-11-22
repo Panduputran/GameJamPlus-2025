@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://vw77lvyho2xj"
-path="res://.godot/imported/rumah edit file glb.glb-26543965cbb6d90b907b76b12d42841b.scn"
+uid="uid://cb6egtjpbovej"
+path="res://.godot/imported/gayung.glb-d5ed8cda0243b88a6bea8b1c1af7e840.scn"
 
 [deps]
 
-source_file="res://assets/models/map_game/rumah edit file glb.glb"
-dest_files=["res://.godot/imported/rumah edit file glb.glb-26543965cbb6d90b907b76b12d42841b.scn"]
+source_file="res://assets/models/object/gayung.glb"
+dest_files=["res://.godot/imported/gayung.glb-d5ed8cda0243b88a6bea8b1c1af7e840.scn"]
 
 [params]
 

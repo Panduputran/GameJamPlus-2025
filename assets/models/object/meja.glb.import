@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bo1y588htkqj"
-path="res://.godot/imported/Rumah.glb-89b5d3f7611b9cbcc657014c86f0d057.scn"
+uid="uid://b72m6sgqcqpsf"
+path="res://.godot/imported/meja.glb-2a5b1b9aa526ab3b0d8aac11d9d1af6f.scn"
 
 [deps]
 
-source_file="res://assets/models/Rumah.glb"
-dest_files=["res://.godot/imported/Rumah.glb-89b5d3f7611b9cbcc657014c86f0d057.scn"]
+source_file="res://assets/models/object/meja.glb"
+dest_files=["res://.godot/imported/meja.glb-2a5b1b9aa526ab3b0d8aac11d9d1af6f.scn"]
 
 [params]
 

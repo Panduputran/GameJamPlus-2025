@@ -3,20 +3,20 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dxogjt160jxvu"
-path="res://.godot/imported/meja lesehan.glb-f7e5b61f4e4a62ed5836445daf4f9d49.scn"
+uid="uid://v7w3ccv2ck60"
+path="res://.godot/imported/ember.glb-db9a8ac40633274dfe2e5064528ef8f9.scn"
 
 [deps]
 
-source_file="res://assets/models/map_game/meja lesehan.glb"
-dest_files=["res://.godot/imported/meja lesehan.glb-f7e5b61f4e4a62ed5836445daf4f9d49.scn"]
+source_file="res://assets/models/object/ember.glb"
+dest_files=["res://.godot/imported/ember.glb-db9a8ac40633274dfe2e5064528ef8f9.scn"]
 
 [params]
 
 nodes/root_type=""
 nodes/root_name=""
 nodes/apply_root_scale=true
-nodes/root_scale=1.0
+nodes/root_scale=0.1
 nodes/import_as_skeleton_bones=false
 meshes/ensure_tangents=true
 meshes/generate_lods=true
