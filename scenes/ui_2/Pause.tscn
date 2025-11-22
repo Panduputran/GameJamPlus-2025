@@ -1,0 +1,146 @@
+[gd_scene load_steps=14 format=3 uid="uid://dirrdmdl4xse2"]
+
+[ext_resource type="Script" path="res://User Interface/Pause.gd" id="1_6mji1"]
+[ext_resource type="Texture2D" uid="uid://d3u77mam8pu01" path="res://Asset/Icon/Prinbles_YetAnotherIcons (beta) (9_7_2023)/png/White-Icon/Play.png" id="1_b6qox"]
+[ext_resource type="Texture2D" uid="uid://deb16w6y8tvb7" path="res://Asset/Icon/Prinbles_YetAnotherIcons (beta) (9_7_2023)/png/White-Icon/Gear.png" id="2_eu26p"]
+[ext_resource type="Texture2D" uid="uid://c3adjy05a77h1" path="res://Asset/Texture/WhatsApp Image 2024-01-18 at 20.20.03.jpeg" id="2_v8c4h"]
+[ext_resource type="Theme" uid="uid://v1ubqbgit28l" path="res://User Interface/Menu.tres" id="3_jn636"]
+[ext_resource type="Texture2D" uid="uid://clmkww4nc710x" path="res://Asset/Icon/Prinbles_YetAnotherIcons (beta) (9_7_2023)/png/White-Icon/Multiplayer.png" id="3_x6d80"]
+[ext_resource type="Texture2D" uid="uid://dyet6btxdhqr5" path="res://Asset/Icon/Prinbles_YetAnotherIcons (beta) (9_7_2023)/png/White-Icon/Exit.png" id="4_rn3me"]
+[ext_resource type="Texture2D" uid="uid://d3m82qhdn566i" path="res://Asset/Icon/Prinbles_YetAnotherIcons (beta) (9_7_2023)/png@0.5x/White-Icon/Music-On@0.5x.png" id="5_3kwl2"]
+[ext_resource type="Texture2D" uid="uid://68xphtl5i663" path="res://Asset/Icon/Prinbles_YetAnotherIcons (beta) (9_7_2023)/png@0.5x/White-Icon/TalkBubble@0.5x.png" id="6_0dkgl"]
+[ext_resource type="Script" path="res://User Interface/Music_Button.gd" id="6_d4qxy"]
+[ext_resource type="Texture2D" uid="uid://hjmx0h7w780m" path="res://Asset/Icon/Prinbles_YetAnotherIcons (beta) (9_7_2023)/png@0.5x/White-Icon/Info@0.5x.png" id="7_0tii0"]
+[ext_resource type="PackedScene" uid="uid://cydrqes4wutvr" path="res://User Interface/Settings.tscn" id="9_f0qvn"]
+[ext_resource type="PackedScene" uid="uid://c1qs87ogoga8a" path="res://User Interface/credit.tscn" id="10_6cxf5"]
+
+[node name="Pause" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_6mji1")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(140, 362)
+scale = Vector2(0.748581, 1.13993)
+texture = ExtResource("2_v8c4h")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -71.0
+offset_top = -23.0
+offset_right = 1203.0
+offset_bottom = 709.0
+color = Color(0, 0, 0, 0.211765)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -170.0
+offset_top = 24.0
+offset_right = 403.0
+offset_bottom = 1025.0
+rotation = -0.206403
+color = Color(0, 0, 0, 0.423529)
+
+[node name="Resume" type="Button" parent="."]
+layout_mode = 0
+offset_left = 87.0
+offset_top = 224.0
+offset_right = 258.0
+offset_bottom = 295.0
+rotation = 0.00122695
+theme = ExtResource("3_jn636")
+theme_override_font_sizes/font_size = 45
+text = " Resume"
+icon = ExtResource("1_b6qox")
+
+[node name="Settings" type="Button" parent="."]
+layout_mode = 0
+offset_left = 89.0
+offset_top = 308.0
+offset_right = 345.0
+offset_bottom = 379.0
+rotation = 0.00122695
+theme = ExtResource("3_jn636")
+theme_override_font_sizes/font_size = 45
+text = " Settings"
+icon = ExtResource("2_eu26p")
+
+[node name="Credit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 391.0
+offset_right = 345.0
+offset_bottom = 462.0
+rotation = 0.00122695
+theme = ExtResource("3_jn636")
+theme_override_font_sizes/font_size = 45
+text = " Credit"
+icon = ExtResource("3_x6d80")
+alignment = 0
+
+[node name="menu" type="Button" parent="."]
+layout_mode = 0
+offset_left = 87.0
+offset_top = 474.0
+offset_right = 267.0
+offset_bottom = 545.0
+rotation = 0.00122695
+theme = ExtResource("3_jn636")
+theme_override_font_sizes/font_size = 45
+text = "Menu
+"
+icon = ExtResource("4_rn3me")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Settings" parent="CanvasLayer" instance=ExtResource("9_f0qvn")]
+visible = false
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="Credit" parent="CanvasLayer2" instance=ExtResource("10_6cxf5")]
+visible = false
+
+[node name="Music2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1065.0
+offset_top = 574.0
+offset_right = 1102.0
+offset_bottom = 620.0
+rotation = 0.00122695
+theme = ExtResource("3_jn636")
+theme_override_font_sizes/font_size = 45
+icon = ExtResource("5_3kwl2")
+icon_alignment = 1
+script = ExtResource("6_d4qxy")
+
+[node name="Feedback" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1016.0
+offset_top = 574.0
+offset_right = 1053.0
+offset_bottom = 620.0
+rotation = 0.00122695
+theme = ExtResource("3_jn636")
+theme_override_font_sizes/font_size = 45
+icon = ExtResource("6_0dkgl")
+icon_alignment = 1
+
+[node name="Credits" type="Button" parent="."]
+layout_mode = 0
+offset_left = 968.0
+offset_top = 574.0
+offset_right = 1005.0
+offset_bottom = 620.0
+rotation = 0.00122695
+theme = ExtResource("3_jn636")
+theme_override_font_sizes/font_size = 45
+icon = ExtResource("7_0tii0")
+icon_alignment = 1
+
+[connection signal="pressed" from="Resume" to="." method="resume_game"]
+[connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Credit" to="." method="_on_credit_pressed"]
+[connection signal="pressed" from="menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="Music2" to="Music2" method="_on_pressed"]

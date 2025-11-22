@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://b1wr2km8pmhhb"]
+
+[ext_resource type="PackedScene" uid="uid://c8ymlyastaxar" path="res://scenes/map/main_map.tscn" id="1_u8npi"]
+[ext_resource type="PackedScene" uid="uid://ckeubiowqdjb6" path="res://scenes/player/player.tscn" id="2_lual8"]
+[ext_resource type="PackedScene" uid="uid://d0nxgvalr64lh" path="res://scenes/objects/interactive_object.tscn" id="3_dv3je"]
+
+[sub_resource type="Environment" id="Environment_qqrmd"]
+
+[node name="GameMain" type="Node3D"]
+
+[node name="Player" parent="." instance=ExtResource("2_lual8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7011, 1.73987, -12.0834)
+
+[node name="InteractiveObject" parent="." instance=ExtResource("3_dv3je")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.79198, 1.54047, -2.94372)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_qqrmd")
+
+[node name="MainMap" parent="." instance=ExtResource("1_u8npi")]

@@ -1,0 +1,60 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhlvik85i8wy"]
+
+[ext_resource type="Script" path="res://scripts/UI/credits.gd" id="1_mkj5w"]
+[ext_resource type="Texture2D" uid="uid://bvdbq4ri1hat2" path="res://assets/image/credits.png" id="2_28g8k"]
+[ext_resource type="Theme" uid="uid://eeuemknkteny" path="res://scenes/ui/main_menu.tres" id="3_vjp7c"]
+
+[node name="credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mkj5w")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.000657875
+color = Color(0, 0, 0, 0.129412)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 138.0
+offset_top = 58.0
+offset_right = -154.0
+offset_bottom = -78.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_28g8k")
+expand_mode = 1
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -64.9999
+offset_top = -86.9999
+offset_right = 92.0001
+offset_bottom = -36.9999
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.686976, 0.727885)
+size_flags_vertical = 4
+theme = ExtResource("3_vjp7c")
+text = "Back"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
