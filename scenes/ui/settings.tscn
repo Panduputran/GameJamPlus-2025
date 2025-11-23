@@ -1455,12 +1455,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Mechanics" parent="SettingContainer" instance=ExtResource("4_88hv5")]
-layout_mode = 1
-offset_top = -29.0
-offset_bottom = -29.0
-
-[node name="Settings Panel" type="TextureRect" parent="SettingContainer"]
+[node name="SettingsPanel" type="TextureRect" parent="SettingContainer"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -1477,7 +1472,7 @@ scale = Vector2(0.386715, 0.348397)
 theme = SubResource("Theme_5qk40")
 texture = ExtResource("3_2jn1r")
 
-[node name="Volume" type="HSlider" parent="SettingContainer/Settings Panel"]
+[node name="Volume" type="HSlider" parent="SettingContainer/SettingsPanel"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.296
@@ -1495,7 +1490,7 @@ value = -47.0
 tick_count = 5
 ticks_on_borders = true
 
-[node name="OptionButton" type="OptionButton" parent="SettingContainer/Settings Panel"]
+[node name="OptionButton" type="OptionButton" parent="SettingContainer/SettingsPanel"]
 layout_mode = 0
 offset_left = 654.228
 offset_top = 522.393
@@ -1509,7 +1504,7 @@ popup/item_1/id = 1
 popup/item_2/text = "Standard"
 popup/item_2/id = 2
 
-[node name="Brighness" type="HSlider" parent="SettingContainer/Settings Panel"]
+[node name="Brighness" type="HSlider" parent="SettingContainer/SettingsPanel"]
 layout_mode = 0
 offset_left = 659.4
 offset_top = 640.075
@@ -1521,7 +1516,7 @@ step = 0.5
 value = 1.0
 tick_count = 4
 
-[node name="Sensitivity" type="Label" parent="SettingContainer/Settings Panel"]
+[node name="SensitivityLabel" type="Label" parent="SettingContainer/SettingsPanel"]
 layout_mode = 0
 offset_left = 656.814
 offset_top = 720.442
@@ -1531,7 +1526,7 @@ scale = Vector2(0.620519, 0.600596)
 theme_override_font_sizes/font_size = 55
 text = "Sensitivity"
 
-[node name="Volume2" type="Label" parent="SettingContainer/Settings Panel"]
+[node name="Volume2" type="Label" parent="SettingContainer/SettingsPanel"]
 layout_mode = 0
 offset_left = 656.814
 offset_top = 324.342
@@ -1542,7 +1537,7 @@ theme_override_font_sizes/font_size = 55
 text = "Volume
 "
 
-[node name="Display" type="Label" parent="SettingContainer/Settings Panel"]
+[node name="Display" type="Label" parent="SettingContainer/SettingsPanel"]
 layout_mode = 0
 offset_left = 656.814
 offset_top = 442.025
@@ -1552,7 +1547,7 @@ scale = Vector2(0.620519, 0.600596)
 theme_override_font_sizes/font_size = 55
 text = "Display Resolution"
 
-[node name="Brightness" type="Label" parent="SettingContainer/Settings Panel"]
+[node name="BrightnessLabel" type="Label" parent="SettingContainer/SettingsPanel"]
 layout_mode = 0
 offset_left = 656.814
 offset_top = 576.928
@@ -1562,7 +1557,7 @@ scale = Vector2(0.620519, 0.600596)
 theme_override_font_sizes/font_size = 55
 text = "Brightness"
 
-[node name="sensitivity" type="HSlider" parent="SettingContainer/Settings Panel"]
+[node name="sensitivity" type="HSlider" parent="SettingContainer/SettingsPanel"]
 layout_mode = 0
 offset_left = 662.0
 offset_top = 778.242
@@ -1573,7 +1568,7 @@ value = 50.0
 tick_count = 5
 ticks_on_borders = true
 
-[node name="Mute_label" type="Label" parent="SettingContainer/Settings Panel"]
+[node name="Mute_label" type="Label" parent="SettingContainer/SettingsPanel"]
 layout_mode = 2
 offset_left = 1179.16
 offset_top = 315.732
@@ -1583,7 +1578,7 @@ scale = Vector2(0.506249, 0.555717)
 theme_override_font_sizes/font_size = 58
 text = "Mute"
 
-[node name="Mute" type="CheckBox" parent="SettingContainer/Settings Panel/Mute_label"]
+[node name="Mute" type="CheckBox" parent="SettingContainer/SettingsPanel/Mute_label"]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -1599,7 +1594,7 @@ grow_vertical = 2
 scale = Vector2(3, 3)
 theme = SubResource("Theme_eijo0")
 
-[node name="Reset" type="Button" parent="SettingContainer/Settings Panel"]
+[node name="Reset" type="Button" parent="SettingContainer/SettingsPanel"]
 layout_mode = 0
 offset_left = 879.201
 offset_top = 1073.49
@@ -1611,7 +1606,7 @@ theme = ExtResource("3_k7e0w")
 theme_override_font_sizes/font_size = 85
 text = "Reset"
 
-[node name="Control" type="Button" parent="SettingContainer/Settings Panel"]
+[node name="Control" type="Button" parent="SettingContainer/SettingsPanel"]
 layout_mode = 0
 offset_left = 1083.49
 offset_top = 1073.49
@@ -1623,7 +1618,7 @@ theme = ExtResource("3_k7e0w")
 theme_override_font_sizes/font_size = 85
 text = "Control"
 
-[node name="Back" type="Button" parent="SettingContainer/Settings Panel"]
+[node name="Back" type="Button" parent="SettingContainer/SettingsPanel"]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -1642,14 +1637,23 @@ theme = ExtResource("3_k7e0w")
 theme_override_font_sizes/font_size = 85
 text = "Back"
 
+[node name="Mechanics" parent="SettingContainer" instance=ExtResource("4_88hv5")]
+visible = false
+layout_mode = 1
+offset_left = 17.0
+offset_top = -62.0
+offset_right = 17.0
+offset_bottom = -62.0
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="SettingContainer"]
 stream = ExtResource("4_0x8bk")
 
-[connection signal="changed" from="SettingContainer/Settings Panel/Volume" to="." method="_on_volume_changed"]
-[connection signal="item_selected" from="SettingContainer/Settings Panel/OptionButton" to="." method="_on_option_button_item_selected"]
-[connection signal="changed" from="SettingContainer/Settings Panel/Brighness" to="." method="_on_brighness_changed"]
-[connection signal="changed" from="SettingContainer/Settings Panel/sensitivity" to="." method="_on_sensitivity_changed"]
-[connection signal="toggled" from="SettingContainer/Settings Panel/Mute_label/Mute" to="." method="_on_mute_toggled"]
-[connection signal="pressed" from="SettingContainer/Settings Panel/Reset" to="." method="_on_reset_pressed"]
-[connection signal="pressed" from="SettingContainer/Settings Panel/Control" to="." method="_on_control_pressed"]
-[connection signal="pressed" from="SettingContainer/Settings Panel/Back" to="." method="_on_back_pressed"]
+[connection signal="changed" from="SettingContainer/SettingsPanel/Volume" to="." method="_on_volume_changed"]
+[connection signal="item_selected" from="SettingContainer/SettingsPanel/OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="changed" from="SettingContainer/SettingsPanel/Brighness" to="." method="_on_brighness_changed"]
+[connection signal="value_changed" from="SettingContainer/SettingsPanel/Brighness" to="." method="_on_brighness_value_changed"]
+[connection signal="changed" from="SettingContainer/SettingsPanel/sensitivity" to="." method="_on_sensitivity_changed"]
+[connection signal="toggled" from="SettingContainer/SettingsPanel/Mute_label/Mute" to="." method="_on_mute_toggled"]
+[connection signal="pressed" from="SettingContainer/SettingsPanel/Reset" to="." method="_on_reset_pressed"]
+[connection signal="pressed" from="SettingContainer/SettingsPanel/Control" to="." method="_on_control_pressed"]
+[connection signal="pressed" from="SettingContainer/SettingsPanel/Back" to="." method="_on_back_pressed"]

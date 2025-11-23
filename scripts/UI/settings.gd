@@ -9,7 +9,7 @@ var default_sensitivity: float = 0.5
 @onready var p1: VBoxContainer = $"../MenuContainer"
 @onready var p: TextureRect = $"../TextureRect2"
 @onready var mechanics: Control = $SettingContainer/Mechanics
-@onready var settingcontainer: TextureRect = $"SettingContainer/Settings Panel"
+@onready var settingcontainer: TextureRect = $"SettingContainer/SettingsPanel"
 
 
 # Called when the node enters the scene tree for the first time.

@@ -3,10 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://ckeubiowqdjb6" path="res://scenes/player/player.tscn" id="1_kp4le"]
 [ext_resource type="PackedScene" uid="uid://chuundg6wfqao" path="res://assets/models/object/meja.tscn" id="3_iqpru"]
 [ext_resource type="PackedScene" uid="uid://cstj7nbcl4jsn" path="res://assets/models/object/ember.tscn" id="3_nuycq"]
-[ext_resource type="PackedScene" uid="uid://cgmr4ypctvor" path="res://assets/models/map_game/rumaahh.tscn" id="4_f606b"]
-[ext_resource type="PackedScene" uid="uid://bhvpfipkgnvle" path="res://assets/models/object/laptop.tscn" id="5_g8vnk"]
-[ext_resource type="PackedScene" uid="uid://d3vux7xj6hxkb" path="res://assets/models/object/pen.tscn" id="6_j0hoh"]
-[ext_resource type="PackedScene" uid="uid://dh5g02hwb5ab8" path="res://assets/models/object/notebook.tscn" id="7_wwl44"]
+[ext_resource type="PackedScene" path="res://assets/models/map_game/rumaahh.tscn" id="4_f606b"]
+[ext_resource type="PackedScene" path="res://assets/models/object/laptop.tscn" id="5_g8vnk"]
+[ext_resource type="PackedScene" path="res://assets/models/object/pen.tscn" id="6_j0hoh"]
+[ext_resource type="PackedScene" path="res://assets/models/object/notebook.tscn" id="7_wwl44"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jh644"]
 albedo_color = Color(0.31802, 0.31802, 0.31802, 1)
