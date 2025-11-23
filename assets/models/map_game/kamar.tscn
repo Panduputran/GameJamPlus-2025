@@ -1,9 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://ch1fp582tkpqx"]
+[gd_scene load_steps=11 format=3 uid="uid://ch1fp582tkpqx"]
 
 [ext_resource type="PackedScene" uid="uid://ckeubiowqdjb6" path="res://scenes/player/player.tscn" id="1_kp4le"]
 [ext_resource type="PackedScene" uid="uid://chuundg6wfqao" path="res://assets/models/object/meja.tscn" id="3_iqpru"]
 [ext_resource type="PackedScene" uid="uid://cstj7nbcl4jsn" path="res://assets/models/object/ember.tscn" id="3_nuycq"]
-[ext_resource type="PackedScene" uid="uid://btkm1dwhigpvc" path="res://assets/models/object/rumah.tscn" id="4_a4eo2"]
+[ext_resource type="PackedScene" uid="uid://cgmr4ypctvor" path="res://assets/models/map_game/rumaahh.tscn" id="4_f606b"]
+[ext_resource type="PackedScene" uid="uid://bhvpfipkgnvle" path="res://assets/models/object/laptop.tscn" id="5_g8vnk"]
+[ext_resource type="PackedScene" uid="uid://d3vux7xj6hxkb" path="res://assets/models/object/pen.tscn" id="6_j0hoh"]
+[ext_resource type="PackedScene" uid="uid://dh5g02hwb5ab8" path="res://assets/models/object/notebook.tscn" id="7_wwl44"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jh644"]
 albedo_color = Color(0.31802, 0.31802, 0.31802, 1)
@@ -36,11 +39,20 @@ transform = Transform3D(0.0569624, 0.668873, -0.741191, -0.0320287, 0.743238, 0.
 [node name="Player" parent="." instance=ExtResource("1_kp4le")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.18613, -0.0462915, 0.0329166)
 
-[node name="StaticBody3D" parent="." instance=ExtResource("3_nuycq")]
-transform = Transform3D(1.36399, 0, 0, 0, 1.36399, 0, 0, 0, 1.36399, -1.25137, 0.282503, 0)
+[node name="ember" parent="." instance=ExtResource("3_nuycq")]
+transform = Transform3D(1.36399, 0, 0, 0, 1.36399, 0, 0, 0, 1.36399, -9.96495, 0.296227, -2.99656)
 
 [node name="meja" parent="." instance=ExtResource("3_iqpru")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00650787, 4.29153e-05, -0.00533462)
+transform = Transform3D(-0.0017802, 0, -0.999998, 0, 1, 0, 0.999998, 0, -0.0017802, -6.47508, 4.29153e-05, 3.06515)
 
-[node name="rumah" parent="." instance=ExtResource("4_a4eo2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.78633, 0.110905, 0)
+[node name="rumaahh" parent="." instance=ExtResource("4_f606b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8407, 0.00857407, 0)
+
+[node name="laptop" parent="." instance=ExtResource("5_g8vnk")]
+transform = Transform3D(-0.0016334, 0, -0.330696, 0, 0.3307, 0, 0.330696, 0, -0.0016334, -6.47448, 0.569826, 3.07171)
+
+[node name="pen" parent="." instance=ExtResource("6_j0hoh")]
+transform = Transform3D(0.0579371, 0, 0, 0, 0.0579371, 0, 0, 0, 0.0579371, -6.87921, 0.607294, 2.88968)
+
+[node name="notebook" parent="." instance=ExtResource("7_wwl44")]
+transform = Transform3D(0.0709073, 0, 0, 0, 0.0709073, 0, 0, 0, 0.0709073, -6.92235, 0.583868, 2.90984)
