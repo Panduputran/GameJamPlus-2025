@@ -1,3 +1,11 @@
-[gd_scene format=3 uid="uid://bv2qo1lxcmwpu"]
+[gd_scene load_steps=3 format=3 uid="uid://bv2qo1lxcmwpu"]
 
-[node name="Node3D" type="Node3D"]
+[ext_resource type="PackedScene" uid="uid://cxsvmwuunew2s" path="res://assets/models/map_game/kamar.tscn" id="1_aysum"]
+[ext_resource type="PackedScene" uid="uid://ckeubiowqdjb6" path="res://scenes/player/player.tscn" id="1_f060a"]
+
+[node name="Line 1" type="Node3D"]
+
+[node name="kamar" parent="." instance=ExtResource("1_aysum")]
+
+[node name="Player" parent="." instance=ExtResource("1_f060a")]
+transform = Transform3D(-0.0226873, 0, -0.999743, 0, 1, 0, 0.999743, 0, -0.0226873, 0.956651, 0, 1.82312)

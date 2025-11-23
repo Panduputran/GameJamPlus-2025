@@ -1638,6 +1638,7 @@ theme_override_font_sizes/font_size = 85
 text = "Back"
 
 [node name="Mechanics" parent="SettingContainer" instance=ExtResource("4_88hv5")]
+visible = false
 layout_mode = 1
 offset_left = 17.0
 offset_top = -13.0
