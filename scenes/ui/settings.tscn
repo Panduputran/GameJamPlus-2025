@@ -1456,7 +1456,6 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Mechanics" parent="SettingContainer" instance=ExtResource("4_88hv5")]
-visible = false
 layout_mode = 1
 offset_top = -29.0
 offset_bottom = -29.0

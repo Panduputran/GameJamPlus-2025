@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://scripts/UI/main_menu.gd" id="1_0tt6t"]
 [ext_resource type="Texture2D" uid="uid://8l2sg1wt1am7" path="res://assets/image/Bg2.png" id="2_0q5wb"]
 [ext_resource type="Texture2D" uid="uid://b4dau1l2h6mf8" path="res://assets/image/Logo (1).png" id="3_g8sac"]
-[ext_resource type="AudioStream" uid="uid://c8gprv6rnrlfc" path="res://assets/sounds/Instructions for Living a Life by Savfk [CC-BY royalty free music].mp3" id="4_lnv0h"]
 [ext_resource type="Theme" uid="uid://eeuemknkteny" path="res://scenes/ui/main_menu.tres" id="4_toghw"]
+[ext_resource type="AudioStream" uid="uid://cey5evnde2i0f" path="res://assets/music/Main BGM The Neighbor's.mp3" id="5_86nkc"]
 [ext_resource type="Texture2D" uid="uid://dgthpy11j60h2" path="res://assets/image/Transparent.png" id="5_i6lke"]
 [ext_resource type="PackedScene" uid="uid://dk2wvlfaenuxv" path="res://scenes/ui/settings.tscn" id="5_swdh0"]
 [ext_resource type="PackedScene" uid="uid://bhlvik85i8wy" path="res://scenes/ui/credits.tscn" id="6_q1rb7"]
@@ -60,7 +60,7 @@ stream = ExtResource("7_8hgau")
 volume_db = 0.215
 
 [node name="MusicMain" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_lnv0h")
+stream = ExtResource("5_86nkc")
 autoplay = true
 
 [node name="TextureRect2" type="TextureRect" parent="."]
