@@ -1,4 +1,4 @@
-[gd_scene load_steps=74 format=4 uid="uid://d1qd51rwg3r8p"]
+[gd_scene load_steps=74 format=4 uid="uid://cgmr4ypctvor"]
 
 [ext_resource type="Texture2D" uid="uid://b8rghh33yy81o" path="res://assets/texture/map/dinding belakang/tembok belakang_albedo.png" id="1_2ng4j"]
 [ext_resource type="Texture2D" uid="uid://dw6cd1cbs8jg" path="res://assets/texture/map/toilet up/toilet up_albedo.png" id="1_tawy3"]
