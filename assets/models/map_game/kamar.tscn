@@ -410,7 +410,7 @@ mesh = SubResource("ArrayMesh_is2m3")
 skeleton = NodePath("")
 
 [node name="BezierCurve" type="MeshInstance3D" parent="selang"]
-transform = Transform3D(-0.469063, 0.00269343, 0, 0, 0, 0.469071, 0.00269343, 0.469063, 0, -5.89679, 0.704357, -3.25144)
+transform = Transform3D(-0.469063, 0.00269343, 0, 0, 0, 0.469071, 0.00269343, 0.469063, 0, -5.89679, 0.704357, -3.41053)
 mesh = SubResource("ArrayMesh_tq021")
 skeleton = NodePath("")
 
