@@ -4,9 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://cx6siuokwuh2k" path="res://scenes/ui/pause.tscn" id="3_ffej2"]
 [ext_resource type="PackedScene" uid="uid://bwmjmhujy7fg5" path="res://scenes/ui/ui_player.tscn" id="3_vps57"]
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vlsv5"]
-radius = 1.89245
-height = 7.04619
+[sub_resource type="BoxShape3D" id="BoxShape3D_7oq5p"]
+size = Vector3(1, 0.966858, 1)
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_2dmcw")
@@ -21,8 +20,8 @@ transform = Transform3D(-0.163369, 0, 0.00290898, 0, 0.0521679, 0, -0.00769572, 
 skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(-0.158307, 0, 0.00734414, 0, 0.24032, 0, -0.00745727, 0, -0.155905, -0.00815436, 0.854458, 0.162734)
-shape = SubResource("CapsuleShape3D_vlsv5")
+transform = Transform3D(-0.509018, 0, 0.00306358, 0, 1.92549, 0, -0.0030473, 0, -0.511737, -0.00815436, 0.930266, 0.162734)
+shape = SubResource("BoxShape3D_7oq5p")
 
 [node name="UI Player" parent="." instance=ExtResource("3_vps57")]
 

@@ -530,6 +530,15 @@ skeleton = NodePath("")
 transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -0.274684, 1.39474, 0.302574)
 shape = SubResource("ConcavePolygonShape3D_yw8im")
 
+[node name="tembok samping kanan_012" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -0.274684, 4.40154, 0.302574)
+mesh = SubResource("ArrayMesh_cqkio")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="."]
+transform = Transform3D(0, 0, 1, 0, 1.18858, 0, -1, 0, 0, -0.274684, 4.55627, 0.302574)
+shape = SubResource("ConcavePolygonShape3D_yw8im")
+
 [node name="tembok samping kanan_001" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 3.10994, 1.5, 0.130388)
 mesh = SubResource("ArrayMesh_thgl8")
