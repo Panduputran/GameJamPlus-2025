@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://c4qtidsfcyumu"]
 
 [ext_resource type="Script" path="res://scripts/UI/mechanics.gd" id="1_4o6mx"]
-[ext_resource type="Texture2D" uid="uid://y56n727xe0td" path="res://assets/image/Mechanics.png" id="1_wh1xc"]
 [ext_resource type="Theme" uid="uid://eeuemknkteny" path="res://scenes/ui/main_menu.tres" id="2_3rfoy"]
+[ext_resource type="Texture2D" uid="uid://duwieinvs3l7q" path="res://assets/image/Control.png" id="2_5i57y"]
 [ext_resource type="AudioStream" uid="uid://bg1crcbrl003n" path="res://assets/sounds/mouse-click-5-381777.mp3" id="4_yth2j"]
 
 [node name="Mechanics" type="Control"]
@@ -13,35 +13,45 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4o6mx")
+metadata/_edit_vertical_guides_ = [2.0, 576.0]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = 125.0
-offset_top = 14.0
-offset_right = 2045.0
-offset_bottom = 1094.0
-scale = Vector2(0.463227, 0.477946)
-texture = ExtResource("1_wh1xc")
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_yth2j")
 
-[node name="Back" type="Button" parent="."]
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 107.0
+offset_top = 43.0
+offset_right = 875.0
+offset_bottom = 475.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4869, 0.4869)
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer"]
+layout_mode = 2
+texture = ExtResource("2_5i57y")
+
+[node name="Back" type="Button" parent="CenterContainer/TextureRect"]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -63.0
-offset_top = -119.0
-offset_right = 94.0
-offset_bottom = -69.0
+offset_left = -146.215
+offset_top = 1.0155
+offset_right = 245.785
+offset_bottom = 101.016
 grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(0.686976, 0.727885)
 size_flags_vertical = 4
 theme = ExtResource("2_3rfoy")
+theme_override_font_sizes/font_size = 88
 text = "Close Guide"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_yth2j")
-
-[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="CenterContainer/TextureRect/Back" to="." method="_on_back_pressed"]

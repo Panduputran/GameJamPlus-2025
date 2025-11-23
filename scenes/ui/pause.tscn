@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://cx6siuokwuh2k"]
+[gd_scene load_steps=7 format=3 uid="uid://cx6siuokwuh2k"]
 
-[ext_resource type="Texture2D" uid="uid://dfn636t8q1ie8" path="res://assets/image/Menu.png" id="1_cir66"]
 [ext_resource type="Script" path="res://scripts/UI/pause.gd" id="1_irpe0"]
+[ext_resource type="Texture2D" uid="uid://cc2xj3cgq6w7e" path="res://assets/image/Pause.png" id="2_0wb1g"]
 [ext_resource type="Theme" uid="uid://eeuemknkteny" path="res://scenes/ui/main_menu.tres" id="2_ct47a"]
 [ext_resource type="PackedScene" uid="uid://dk2wvlfaenuxv" path="res://scenes/ui/settings.tscn" id="4_jsa7r"]
 [ext_resource type="AudioStream" uid="uid://bg1crcbrl003n" path="res://assets/sounds/mouse-click-5-381777.mp3" id="5_7blbw"]
+
+[sub_resource type="Theme" id="Theme_s6xx8"]
+VBoxContainer/constants/separation = 4
 
 [node name="Pause" type="Control"]
 layout_mode = 3
@@ -16,6 +19,36 @@ offset_right = 4.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_irpe0")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 246.016
+offset_top = 12.2769
+offset_right = -243.984
+offset_bottom = -232.723
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+
+[node name="MenuContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -121.548
+offset_top = 0.314606
+offset_right = 41.4525
+offset_bottom = 200.315
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+theme = SubResource("Theme_s6xx8")
+theme_override_constants/separation = 16
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -31,14 +64,14 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 210.0
-offset_top = -6.0
-offset_right = 978.0
-offset_bottom = 426.0
+offset_left = 214.0
+offset_top = 123.0
+offset_right = 982.0
+offset_bottom = 555.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.380931, 0.437938)
-texture = ExtResource("1_cir66")
+texture = ExtResource("2_0wb1g")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1
@@ -47,10 +80,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -44.5
-offset_top = -19.0
-offset_right = 44.5
-offset_bottom = 19.0
+offset_left = -42.5
+offset_top = -34.0
+offset_right = 46.5
+offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_ct47a")
@@ -63,10 +96,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -46.0
-offset_top = 20.0
-offset_right = 43.0
-offset_bottom = 58.0
+offset_left = -45.0
+offset_top = 5.0
+offset_right = 46.0
+offset_bottom = 43.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_ct47a")
@@ -79,10 +112,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -47.0
-offset_top = 59.0
-offset_right = 42.0
-offset_bottom = 97.0
+offset_left = -45.0
+offset_top = 44.0
+offset_right = 44.0
+offset_bottom = 82.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_ct47a")
@@ -91,6 +124,10 @@ text = "Quit"
 [node name="Settings" parent="." instance=ExtResource("4_jsa7r")]
 visible = false
 layout_mode = 1
+offset_left = 11.0
+offset_top = 19.0
+offset_right = 11.0
+offset_bottom = 19.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_7blbw")

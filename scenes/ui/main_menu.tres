@@ -1,9 +1,6 @@
-[gd_resource type="Theme" load_steps=8 format=3 uid="uid://eeuemknkteny"]
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://eeuemknkteny"]
 
-[ext_resource type="FontFile" uid="uid://ck8e48o88t4x2" path="res://assets/fonts/Montserrat-VariableFont_wght.ttf" id="1_n452s"]
-
-[sub_resource type="FontVariation" id="FontVariation_wmp45"]
-base_font = ExtResource("1_n452s")
+[ext_resource type="FontFile" uid="uid://d4ac2wyvca3ge" path="res://assets/fonts/ARMY RUST.ttf" id="1_n5eji"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lexhv"]
 content_margin_left = 4.0
@@ -43,7 +40,7 @@ content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
 content_margin_bottom = 4.0
-bg_color = Color(0.225, 0.225, 0.225, 0.6)
+bg_color = Color(0, 0, 0, 0)
 corner_radius_top_left = 3
 corner_radius_top_right = 3
 corner_radius_bottom_right = 3
@@ -75,10 +72,10 @@ corner_radius_bottom_left = 3
 corner_detail = 5
 
 [resource]
-Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
+Button/colors/font_color = Color(1, 1, 1, 1)
 Button/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
 Button/colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
-Button/colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+Button/colors/font_hover_color = Color(0.633755, 0.633757, 0.633758, 1)
 Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
 Button/colors/font_outline_color = Color(0, 0, 0, 1)
 Button/colors/font_pressed_color = Color(1, 1, 1, 1)
@@ -92,8 +89,9 @@ Button/constants/align_to_largest_stylebox = 0
 Button/constants/h_separation = 4
 Button/constants/icon_max_width = 7
 Button/constants/outline_size = 0
-Button/font_sizes/font_size = 21
-Button/fonts/fonttype = SubResource("FontVariation_wmp45")
+Button/font_sizes/font_size = 26
+Button/fonts/font = ExtResource("1_n5eji")
+Button/fonts/fonttype = ExtResource("1_n5eji")
 Button/styles/disabled = SubResource("StyleBoxFlat_lexhv")
 Button/styles/focus = SubResource("StyleBoxFlat_6fdjr")
 Button/styles/hover = SubResource("StyleBoxFlat_a38ut")

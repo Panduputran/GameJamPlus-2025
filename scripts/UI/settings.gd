@@ -4,10 +4,12 @@ var default_volume: float = 0.5
 var default_brightness: float = 1.0
 var default_sensitivity: float = 0.5
 @onready var click: AudioStreamPlayer = $"../AudioStreamPlayer"
-@onready var mechanics: Control = $Mechanics
-@onready var settingcontainer: Control = $SettingContainer
 @onready var music: AudioStreamPlayer = $"../MusicMain"
 @onready var music_slider: HSlider = $SettingContainer/Volume
+@onready var p1: VBoxContainer = $"../MenuContainer"
+@onready var p: TextureRect = $"../TextureRect2"
+@onready var mechanics: Control = $SettingContainer/Mechanics
+@onready var settingcontainer: TextureRect = $"SettingContainer/Settings Panel"
 
 
 # Called when the node enters the scene tree for the first time.
@@ -23,6 +25,9 @@ func _process(delta: float) -> void:
 func _on_back_pressed() -> void:
 	click.play()
 	settings.visible = false
+	p1.visible = true
+	p.visible = true
+
 
 
 func _on_volume_changed() -> void:

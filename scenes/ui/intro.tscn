@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://c42p57huwf785"]
 
 [ext_resource type="Script" path="res://scenes/ui/intro.gd" id="1_3e3u7"]
-[ext_resource type="Texture2D" uid="uid://xc704uv7wqw2" path="res://assets/image/3.jpg" id="2_o26ik"]
-[ext_resource type="Texture2D" uid="uid://dwefhp2xe88in" path="res://assets/image/Unwaking Final.jpg" id="3_q041o"]
-[ext_resource type="Texture2D" uid="uid://drlmukbm76s4o" path="res://assets/image/4.jpg" id="3_sy3la"]
+[ext_resource type="Texture2D" uid="uid://3jfe2gtr0b4n" path="res://assets/image/TheNeighbor.png" id="2_7dufn"]
+[ext_resource type="Texture2D" uid="uid://y3xhoxac3sov" path="res://assets/image/Lanternroot.png" id="3_vfcju"]
+[ext_resource type="Texture2D" uid="uid://b8akhk35a0f6p" path="res://assets/image/Organizer.png" id="4_arehm"]
 
 [sub_resource type="Animation" id="Animation_810eq"]
 length = 0.001
@@ -154,7 +154,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1, 1.01289)
-texture = ExtResource("3_q041o")
+texture = ExtResource("2_7dufn")
 expand_mode = 1
 
 [node name="TextureRect2" type="TextureRect" parent="."]
@@ -165,7 +165,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_sy3la")
+texture = ExtResource("3_vfcju")
 expand_mode = 1
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -176,7 +176,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_o26ik")
+texture = ExtResource("4_arehm")
 expand_mode = 1
 
 [node name="Layer" type="ColorRect" parent="."]

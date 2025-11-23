@@ -1,7 +1,7 @@
 extends Control
 @onready var mechanics: Control = $"."
-@onready var setting_container: Control = $"../SettingContainer"
 @onready var click: AudioStreamPlayer = $AudioStreamPlayer
+@onready var setting_container: TextureRect = $"../Settings Panel"
 
 
 # Called when the node enters the scene tree for the first time.

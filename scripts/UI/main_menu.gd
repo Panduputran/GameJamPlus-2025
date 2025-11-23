@@ -28,6 +28,8 @@ func _on_button_pressed() -> void:
 func _on_button_2_pressed() -> void:
 	click.play() # Cukup panggil .play()
 	settings.visible = true
+	p1.visible = false
+	p.visible = false
 
 func _on_button_3_pressed() -> void:
 	click.play() # Cukup panggil .play()
