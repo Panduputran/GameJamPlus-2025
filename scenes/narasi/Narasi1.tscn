@@ -4,34 +4,6 @@
 [ext_resource type="FontFile" uid="uid://bv5w8i7helx6l" path="res://assets/fonts/skinny_cat/Skinny Cat.ttf" id="2_bta37"]
 [ext_resource type="AudioStream" uid="uid://u5re6iopckvr" path="res://assets/sounds/typing.mp3" id="3_uednv"]
 
-[sub_resource type="Animation" id="Animation_d227y"]
-resource_name = "narasi_1"
-length = 11.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("RichTextLabel:visible_ratio")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.0333333, 10.9667),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("AudioStreamPlayer:playing")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
-"update": 1,
-"values": []
-}
-
 [sub_resource type="Animation" id="Animation_fo6uq"]
 length = 0.001
 tracks/0/type = "value"
@@ -57,6 +29,34 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_d227y"]
+resource_name = "narasi_1"
+length = 15.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333333, 14.2333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AudioStreamPlayer:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8848i"]
@@ -107,9 +107,18 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/normal_font = ExtResource("2_bta37")
 theme_override_font_sizes/normal_font_size = 29
-text = "Mata Anda terbuka. Langit-langit putih kamar kos yang terasa asing.
+text = "Your eyes snap open.
+A plain white ceiling meets your gaze—cold, unfamiliar. This isn’t home. It never feels like home.
 
-Jam dinding di seberang sana menunjukkan pukul 08.00 pagi. Sudah berapa lama Anda di sini? Hari ini terasa sama seperti kemarin: sepi, sunyi, dan dingin."
+Across the room, the wall clock ticks softly, its hands frozen at 8:00 PM.
+How long have you been here?
+Hours... days... everything blends into the same quiet blur.
+
+Tonight feels just like the last:
+empty, silent, and strangely cold.
+
+But something’s different.
+You can feel it—like the room is holding its breath, waiting for you to notice what’s changed."
 progress_bar_delay = 1005
 visible_characters = 0
 visible_ratio = 0.0

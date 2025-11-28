@@ -3,8 +3,8 @@ extends Control
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var narrative_label: Label = $NarrativeText
 
-const TOTAL_DURATION_SECONDS: float = 8.0
-const NEXT_SCENE_PATH := "res://scenes/line/line2.tscn" # UBAH sesuai path kamu
+const TOTAL_DURATION_SECONDS: float = 10.0
+const NEXT_SCENE_PATH := "res://scenes/line/line3.tscn" # UBAH sesuai path kamu
 
 func _ready() -> void:
 	print("Scene Narasi dimulai. Durasi diatur ke %s detik." % TOTAL_DURATION_SECONDS)

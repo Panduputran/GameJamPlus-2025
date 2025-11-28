@@ -27,3 +27,5 @@ shape = SubResource("BoxShape3D_7oq5p")
 
 [node name="Pause" parent="." instance=ExtResource("3_ffej2")]
 visible = false
+offset_left = 0.0
+offset_right = 0.0

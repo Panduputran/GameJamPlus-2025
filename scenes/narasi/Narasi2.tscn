@@ -18,22 +18,6 @@ tracks/0/keys = {
 "values": [0.0]
 }
 
-[sub_resource type="Animation" id="Animation_d227y"]
-resource_name = "narasi_1"
-length = 11.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("RichTextLabel:visible_ratio")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.0333333, 10.9667),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-
 [sub_resource type="Animation" id="Animation_vei8d"]
 resource_name = "narasi2"
 length = 9.0
@@ -45,6 +29,22 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 7.86667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_d227y"]
+resource_name = "narasi_1"
+length = 11.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333333, 10.9667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0.0, 1.0]
@@ -99,7 +99,9 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/normal_font = ExtResource("2_rvk2f")
 theme_override_font_sizes/normal_font_size = 29
-text = "Pilihan sarapan selalu sama. Mie instan. Ruangan terasa kecil, tapi sunyi. Anda menatap air yang mulai mendidih."
+text = "Breakfast is always the same—instant noodles.
+The room feels small, yet silent.
+You watch the water begin to boil."
 progress_bar_delay = 1005
 visible_characters = 0
 visible_ratio = 0.0

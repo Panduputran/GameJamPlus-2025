@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bv2qo1lxcmwpu"]
+[gd_scene load_steps=4 format=3 uid="uid://bv2qo1lxcmwpu"]
 
 [ext_resource type="PackedScene" uid="uid://cxsvmwuunew2s" path="res://assets/models/map_game/kamar.tscn" id="1_aysum"]
 [ext_resource type="PackedScene" uid="uid://ckeubiowqdjb6" path="res://scenes/player/player.tscn" id="1_f060a"]
 [ext_resource type="FontFile" uid="uid://bv5w8i7helx6l" path="res://assets/fonts/skinny_cat/Skinny Cat.ttf" id="3_pyj3i"]
-[ext_resource type="PackedScene" uid="uid://fu4iciqjoypo" path="res://scenes/objects/indomie.tscn" id="4_nu3hc"]
 
 [node name="Line 1" type="Node3D"]
 
@@ -15,13 +14,10 @@ transform = Transform3D(-0.0226873, 0, -0.999743, 0, 1, 0, 0.999743, 0, -0.02268
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Label" type="Label" parent="CanvasLayer"]
-offset_left = 53.0
+offset_left = 72.0
 offset_top = 61.0
-offset_right = 246.0
+offset_right = 258.0
 offset_bottom = 94.0
 theme_override_fonts/font = ExtResource("3_pyj3i")
 theme_override_font_sizes/font_size = 25
-text = "take indomie and cook it"
-
-[node name="Indomie" parent="." instance=ExtResource("4_nu3hc")]
-transform = Transform3D(0.233937, 0, -0.0771915, 0, 0.231824, 0, 0.0787512, 0, 0.229304, 0.875521, 0.952328, -2.37046)
+text = "Ambil dan masak mie"

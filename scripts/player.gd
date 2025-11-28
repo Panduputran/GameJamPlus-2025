@@ -41,10 +41,14 @@ func _input(event):
 			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 	# === Interact ===
-	if Input.is_action_just_pressed("interact"):
-		if GlobalSignals.get_interactable_object() != null:
-			var obj = GlobalSignals.get_interactable_object()
-			obj.interact()
+	if event.is_action_pressed("interact"):
+		# 1. Dapatkan objek yang saat ini siap diinteraksikan dari GlobalSignals
+		var interactable = GlobalSignals.get_interactable_object()
+		
+		# 2. Periksa apakah ada objek yang terdaftar
+		if interactable != null:
+			# 3. Panggil fungsi 'interact()' pada objek tersebut, yang akan menjalankan aksi (ganti scene/beri item)
+			interactable.interact()
 
 
 func _physics_process(delta):

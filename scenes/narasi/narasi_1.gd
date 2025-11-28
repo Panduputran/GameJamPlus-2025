@@ -3,7 +3,7 @@ extends Control
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var narrative_label: Label = $NarrativeText
 
-const TOTAL_DURATION_SECONDS: float = 13.0
+const TOTAL_DURATION_SECONDS: float = 15.0
 const NEXT_SCENE_PATH := "res://scenes/line/line1.tscn" # UBAH sesuai path kamu
 
 func _ready() -> void:

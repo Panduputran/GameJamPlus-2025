@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bwmjmhujy7fg5"]
 
-[ext_resource type="Texture2D" uid="uid://iuu4texv7gru" path="res://assets/image/UI Player.png" id="1_vbaoy"]
+[ext_resource type="Texture2D" uid="uid://wgow1j73yrun" path="res://assets/image/UI.png" id="1_wlc86"]
 
 [node name="UI Player" type="Control"]
 layout_mode = 3
@@ -15,4 +15,4 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(0.600565, 0.600989)
-texture = ExtResource("1_vbaoy")
+texture = ExtResource("1_wlc86")
